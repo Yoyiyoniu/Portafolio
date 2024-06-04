@@ -6,14 +6,16 @@ import Mail from "./img/mail";
 export default function PersonalInfo() {
   return (
     <section id="experiencia" className="py-8 px-2">
-      <Link to="/">
+      <button onClick={() => {
+        console.log("Hola");
+      }}>
         <div className="w-24 h-24">
           <img className="rounded-md" src={Logo} alt="Logo" />
         </div>
         <h2 className="py-5 text-2xl sm:text-3xl md:text-4xl font-bold text-white">
           <span>Hey, soy Rodrigo Leon</span>
         </h2>
-      </Link>
+      </button>
       <h2 className=" text-sm sm:text-md md:text-lg lg:text-xl text-balance max-w-[700px] text-black dark:text-white">
         <span>+2 años de experiencia. </span>
         <span className="text-yellow-800 dark:text-yellow-200">

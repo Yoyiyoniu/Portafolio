@@ -1,5 +1,6 @@
 import type { LinksFunction } from "@remix-run/node";
 import stylesheet from "~/tailwind.css";
+import globalcss from "~/global.css";
 
 import {
   Links,
@@ -12,7 +13,7 @@ import {
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
-  // set icon
+  { rel: "stylesheet", href: globalcss },
   { rel: "icon", href: "/favicon.ico", type: "image/png" },
 ];
 export default function App() {
