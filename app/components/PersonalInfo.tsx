@@ -22,7 +22,7 @@ export default function PersonalInfo() {
           Desarrollador Jr FrontEnd y Backend.{" "}
         </span>
         <span className="text-sky-800 dark:text-sky-200">
-          Especializado en Crear Experiencias Únicas.
+          Especializado en crear experiencias únicas.
         </span>
       </h2>
       <article className="py-6 flex flex-col md:flex-row items-start">

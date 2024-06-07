@@ -18,7 +18,7 @@ export default function About() {
         </div>
       </div>
       <div className="flex">
-        <p className="flex-grow text-[23px]">
+        <p className="flex-grow text-[23px]"> 
           Soy una persona apasionada por dar vida a las ideas.
           Me encanta aprender y experimentar con nuevas tecnologías.
           Me considero autodidacta y disfruto aprender cosas nuevas para aplicarlas en mis proyectos.
