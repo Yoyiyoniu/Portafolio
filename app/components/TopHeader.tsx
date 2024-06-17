@@ -6,17 +6,26 @@ const TopHeader = () => {
       <nav>
         <ul className="bg-slate-700/30 p-3 rounded-full backdrop-blur-sm flex items-center gap-9 text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
           <li>
-            <Link className="hover:underline text-white hover:text-gray-300" to="/#experiencia">
+            <Link
+              className="hover:underline text-white hover:text-gray-300"
+              to="/#experiencia"
+            >
               Experiencia
             </Link>
           </li>
           <li>
-            <Link className="hover:underline text-white hover:text-gray-300" to="/#proyectos">
+            <Link
+              className="hover:underline text-white hover:text-gray-300"
+              to="/#proyectos"
+            >
               Proyectos
             </Link>
           </li>
           <li>
-            <Link className="hover:underline text-white hover:text-gray-300" to="/#about">
+            <Link
+              className="hover:underline text-white hover:text-gray-300"
+              to="/#about"
+            >
               Sobre mí
             </Link>
           </li>
