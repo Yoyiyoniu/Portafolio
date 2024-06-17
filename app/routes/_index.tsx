@@ -14,7 +14,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <main className=" text-white dark bg-gradient-to-r from-black to-gray-900 min-h-screen items-center justify-center">
+    <main className="text-white dark bg-gradient-to-r from-black to-gray-900 min-h-screen items-center justify-center">
       <TopHeader />
       <article className="sm:px-12 md:px-24 lg:px-52 py-4 flex flex-col px-9">
         <PersonalInfo />
