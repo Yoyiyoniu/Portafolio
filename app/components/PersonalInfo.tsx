@@ -29,17 +29,17 @@ export default function PersonalInfo() {
           target="_blank"
           rel="noopener noreferrer"
           to="https://www.linkedin.com/in/rodrigo-gibran-felix-leon/"
-          className="mx-3 items-center flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full mr-2 mb-2 transform hover:scale-90 transition-transform"
+          className="mx-3 items-center flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full mr-2 mb-2 transform hover:scale-95 transition-transform"
         >
-          <LinkedIn width={30} height={30} />
+          <LinkedIn />
           <p className="p-1">LinkedIn</p>
         </Link>
 
         <Link
           to="mailto:rodrigogibranfl@gmail.com"
-          className="items-center mx-3 flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full mr-2 mb-2 transform hover:scale-90 transition-transform"
+          className="items-center mx-3 flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full mr-2 mb-2 transform hover:scale-95 transition-transform"
         >
-          <Mail width={30} height={30} />
+          <Mail />
           <p className="p-1">Contactarme</p>
         </Link>
       </article>
