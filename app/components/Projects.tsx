@@ -3,8 +3,8 @@ import DevIcon from "./img/dev";
 import Remi from "./img/pr/remi";
 import Zibu from "./img/pr/zibu";
 
-import zibuImg from "../assets/mock/905shots_so.png";
-import remiImg from "../assets/mock/94shots_so.png";
+import zibuImg from "../assets/mock/zibu.webp";
+import remiImg from "../assets/mock/remi.webp";
 
 export default function Projects() {
   return (
