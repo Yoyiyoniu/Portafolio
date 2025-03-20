@@ -24,12 +24,12 @@ export default function PersonalInfo() {
           dispositivos.
         </span>
       </h2>
-      <article className="py-6 flex flex-col md:flex-row items-start">
+      <article className="px-5 py-3 flex gap-2 items-start">
         <Link
           target="_blank"
           rel="noopener noreferrer"
           to="https://www.linkedin.com/in/rodrigo-gibran-felix-leon/"
-          className="mx-3 items-center flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full mr-2 mb-2 transform hover:scale-95 transition-transform"
+          className="items-center flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full transform hover:scale-95 transition-transform"
         >
           <LinkedIn />
           <p className="p-1">LinkedIn</p>
@@ -37,7 +37,7 @@ export default function PersonalInfo() {
 
         <Link
           to="mailto:rodrigogibranfl@gmail.com"
-          className="items-center mx-3 flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full mr-2 mb-2 transform hover:scale-95 transition-transform"
+          className="items-center flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full transform hover:scale-95 transition-transform"
         >
           <Mail />
           <p className="p-1">Contactarme</p>
