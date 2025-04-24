@@ -4,8 +4,6 @@ import Mail from "./img/mail";
 import CVIcon from "./img/cv";
 import { ActionButton } from "./ActionButton";
 
-// import CV from "~/assets/MyCV.pdf"
-
 export default function PersonalInfo() {
   return (
     <section id="experiencia" className="my-24 py-8 px-2">
@@ -39,7 +37,7 @@ export default function PersonalInfo() {
           window.location.href = `mailto:${email}`;
         }}
           Icon={Mail}
-          text="Enviar Mail" />
+          text="Contácteme" />
         <ActionButton
           onClick={() => {
             window.open("/MyCV.pdf")
