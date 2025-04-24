@@ -1,7 +1,10 @@
 import Logo from "~/assets/Logo.jpg";
-import { Link } from "@remix-run/react";
 import LinkedIn from "~/components/img/LinkedIn";
 import Mail from "./img/mail";
+import CVIcon from "./img/cv";
+import { ActionButton } from "./ActionButton";
+
+// import CV from "~/assets/MyCV.pdf"
 
 export default function PersonalInfo() {
   return (
@@ -17,7 +20,7 @@ export default function PersonalInfo() {
       <h2 className=" text-sm sm:text-md md:text-lg lg:text-xl text-balance max-w-[700px] text-black dark:text-white">
         <span>+2 años de experiencia. </span>
         <span className="text-yellow-800 dark:text-yellow-200">
-          Desarrollador Jr FrontEnd y Backend.{" "}
+          Desarrollador Fullstack.{" "}
         </span>
         <span className="text-sky-800 dark:text-sky-200">
           Especializado en crear experiencias únicas en todo tipo de
@@ -25,23 +28,23 @@ export default function PersonalInfo() {
         </span>
       </h2>
       <article className="px-5 py-3 flex gap-2 items-start">
-        <Link
-          target="_blank"
-          rel="noopener noreferrer"
-          to="https://www.linkedin.com/in/rodrigo-gibran-felix-leon/"
-          className="items-center flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full transform hover:scale-95 transition-transform"
-        >
-          <LinkedIn />
-          <p className="p-1">LinkedIn</p>
-        </Link>
+        <ActionButton
+          onClick={() => {
+            window.open("https://www.linkedin.com/in/rodrigo-gibran-felix-leon/", "_blank");
+          }}
+          Icon={LinkedIn} text="LinkedIn" />
 
-        <Link
-          to="mailto:rodrigogibranfl@gmail.com"
-          className="items-center flex border border-[#3a3a44] bg-[#292835] hover:bg-[#33333f] p-2 rounded-full transform hover:scale-95 transition-transform"
-        >
-          <Mail />
-          <p className="p-1">Contactarme</p>
-        </Link>
+        <ActionButton onClick={() => {
+          const email = atob("cm9kcmlnb2dpYnJhbmZsQGdtYWlsLmNvbQ==");
+          window.location.href = `mailto:${email}`;
+        }}
+          Icon={Mail}
+          text="Enviar Mail" />
+        <ActionButton
+          onClick={() => {
+            window.open("/MyCV.pdf")
+          }}
+          Icon={CVIcon} text="Descargar CV" />
       </article>
     </section>
   );
