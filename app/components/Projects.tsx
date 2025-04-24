@@ -2,9 +2,11 @@ import Card from "./Card";
 import DevIcon from "./img/dev";
 import Remi from "./img/pr/remi";
 import Zibu from "./img/pr/zibu";
+import HexaIcon from "./img/pr/hexa";
 
 import zibuImg from "../assets/mock/zibu.webp";
 import remiImg from "../assets/mock/remi.webp";
+import hexaImg from "../assets/mock/hexa.webp";
 
 export default function Projects() {
   return (
@@ -16,6 +18,24 @@ export default function Projects() {
         </p>
       </div>
       <div className="mb-16 pt-5 justify-center grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <Card
+          image={hexaImg}
+          cardName="Hexa Creators"
+          description={
+            "Desarrolle el dashboard de HexaCreators, una plataforma privada\
+            de gestión masiva de archivos altamente personalizable."
+          }
+          toLink="https://x.com/HexaCreators"
+          badged={[
+            "NextJS",
+            "React",
+            "TailwindCSS",
+            "Firebase",
+            "Firestore",
+            "Fire Storage",
+          ]}
+          svg={<HexaIcon height={63} width={63} color="#EC353E" />}
+        />
         <Card
           image={remiImg}
           cardName="Recuerda Mi Historia"
@@ -43,12 +63,11 @@ export default function Projects() {
             "React",
             "Remix.run",
             "Grpc",
-            "Express",
-            "Firebase",
-            "NodeJS",
+            "Firebase"
           ]}
           svg={<Zibu />}
         />
+
       </div>
     </section>
   );
